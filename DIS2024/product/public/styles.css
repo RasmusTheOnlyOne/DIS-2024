@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.list-content {
+  height: 600px;
+}
+
+#main-content {
+  border: solid 1px #cccccc;
+}
+
+#images-box,
+#channel-messages {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+#channel-messages,
+.messages_input {
+  border-left: 1px solid #cccccc;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.btn-color {
+  background-color: #0e1c36 !important;
+  color: #fff !important;
+}
+
+.block-body-color {
+  background-color: #b0b0b0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.image-upload > img {
+  max-width: 120px;
+  max-height: 200px;
+}

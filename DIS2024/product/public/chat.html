@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/98a9e78bdf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container p-0">
+        <header class="text-center d-flex justify-content-between mb-5">
+            <!-- Blank empty to justify content -->
+            <div></div>
+
+            <div class="present flex-1">
+                <h1 class="display-4">Connect</h1>
+                <p class="lead">Message and connect with heartwarming images and messages!</p>
+            </div>
+
+            <div class="justify-content-center mt-2">
+                <a id="logout" class="btn btn-danger">Logout</a>
+            </div>
+        </header>
+
+        <div id="main-content" class="row rounded-lg d-flex align-items-stretch p-0 m-0">
+            <div class="col-5 bg-light p-0 m-0 list-content">
+                <div class="bg-gray mb-4 px-4 py-2">
+                    <p class="h5 py-1">Picture Wall</p>
+                </div>
+
+                <div id="images-box" class="gap-4 px-4 d-flex flex-column"></div>
+            </div>
+
+            <div class="col-2 bg-white p-0 m-0 list-content">
+                <div class="bg-gray px-4 py-2 bg-light">
+                    <p class="h5 py-1">Channels</p>
+                </div>
+
+                <div class="messages-box">
+                    <div id="channel-list" class="list-group">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content col-5 bg-white p-0 m-0 d-flex flex-column list-content">
+                <div class="bg-gray px-4 py-2 bg-light">
+                    <p class="h5 py-1">Messages</p>
+                </div>
+
+                <div id="channel-messages" class="px-4 py-5 bg-white d-flex flex-column-reverse flex-grow-1">
+                </div>
+
+                <div class="bg-light messages_input">
+                    <div class="d-flex align-items-center">
+                        <input type="text" placeholder="Type a message" id="message"
+                            class="form-control rounded-0 border-0 py-4 bg-light">
+
+                        <div class="btn-actions d-flex">
+                            <input type="file" id="imageInput" hidden />
+                            <button id="send-image" class="btn btn-link"> <i class="fa fa-upload"></i></button>
+
+                            <button id="send-message" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./chat.js" defer></script>
+</body>
+
+</html>
